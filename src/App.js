@@ -1,4 +1,4 @@
-import React, { useContext} from 'react';
+import React, { useContext,useState,useEffect} from 'react';
 import { RoleContext } from './AppContext';
 import Navbar from './components/Navbar';
 import UserManagement from './components/Admin';
@@ -8,21 +8,21 @@ import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 const DashboardOverview = () => {
   const { role } = useContext(RoleContext); // Get role from context
-  // const [fetchedRole, setFetchedRole] = useState([]);
+  const [fetchedRole, setFetchedRole] = useState([]);
   
 
   // fetching the role from a mock API
-  // useEffect(() => {
-  //   const fetchRole = async () => {
-  //     const res = await fetch("https://6713538b6c5f5ced66260d88.mockapi.io/users/Admin/Editor");
-  //     const data = await res.json();
-  //     // const index = Math.floor(Math.random() * data.length);
+  useEffect(() => {
+    const fetchRole = async () => {
+      const res = await fetch("https://6713538b6c5f5ced66260d88.mockapi.io/users/Admin/Editor");
+      const data = await res.json();
+      const index = Math.floor(Math.random() * data.length);
   
-  //     setFetchedRole(data);
-  //   };
+      setFetchedRole(data[index].role);
+    };
     
-  //   fetchRole();
-  // }, []);
+    fetchRole();
+  }, []);
    
   // const roleElement = fetchedRole.map(Role=>(
   //   <div key={Role.id}>
