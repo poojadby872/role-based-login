@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/role-based-login/static/css/main.ec29fa5a.css",
-    "main.js": "/role-based-login/static/js/main.bb7eb257.js",
+    "main.js": "/role-based-login/static/js/main.54c3cb79.js",
     "index.html": "/role-based-login/index.html",
     "main.ec29fa5a.css.map": "/role-based-login/static/css/main.ec29fa5a.css.map",
-    "main.bb7eb257.js.map": "/role-based-login/static/js/main.bb7eb257.js.map"
+    "main.54c3cb79.js.map": "/role-based-login/static/js/main.54c3cb79.js.map"
   },
   "entrypoints": [
     "static/css/main.ec29fa5a.css",
-    "static/js/main.bb7eb257.js"
+    "static/js/main.54c3cb79.js"
   ]
 }
