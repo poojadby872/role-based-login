@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/poojadby872/role-based-login.git/static/css/main.ec29fa5a.css",
+    "main.js": "/poojadby872/role-based-login.git/static/js/main.bb7eb257.js",
+    "index.html": "/poojadby872/role-based-login.git/index.html",
+    "main.ec29fa5a.css.map": "/poojadby872/role-based-login.git/static/css/main.ec29fa5a.css.map",
+    "main.bb7eb257.js.map": "/poojadby872/role-based-login.git/static/js/main.bb7eb257.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec29fa5a.css",
+    "static/js/main.bb7eb257.js"
+  ]
+}
