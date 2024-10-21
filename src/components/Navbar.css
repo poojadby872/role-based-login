@@ -1,0 +1,40 @@
+
+.navbar {
+    height: 110px;
+    display: flex;
+    padding: 20px 36px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0;
+    color:rgb(75, 73, 73);
+    background-color: azure;
+}
+
+
+
+button{
+    
+    padding: 12px 30px;
+    margin-left: 5px;
+    border: 1px solid rgb(53, 200, 166);
+    border-radius: 5px;
+    background-color: rgb(97, 138, 150);
+}
+.active{
+    visibility: visible;
+    background: rgb(67, 122, 67);
+    color: black;
+    font-weight: bold;
+}
+.navLink{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+
+
+}
+button:hover{
+    background: rgb(52, 84, 52);
+
+}
