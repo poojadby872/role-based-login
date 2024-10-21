@@ -20,21 +20,22 @@ button{
     border: 1px solid rgb(53, 200, 166);
     border-radius: 5px;
     background-color: rgb(97, 138, 150);
+    color:whitesmoke;
+}
+button:hover{
+    background: rgb(52, 84, 52);
+    color: whitesmoke;
+
 }
 .active{
     visibility: visible;
     background: rgb(67, 122, 67);
-    color: black;
     font-weight: bold;
 }
+
 .navLink{
     text-decoration: none;
     color: whitesmoke;
     font-weight: bold;
-
-
 }
-button:hover{
-    background: rgb(52, 84, 52);
 
-}

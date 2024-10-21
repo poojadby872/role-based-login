@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const { role, setRole } = useContext(RoleContext);
-  const {disable,setDisable} = useState(false)
+  const [disable,setDisable] = useState(false)
 
   
 
@@ -15,6 +15,7 @@ const Navbar = () => {
   const handleRoleChange = (e) => {
     setRole(e.target.value)
     };
+   
 
 
   return (
@@ -22,17 +23,15 @@ const Navbar = () => {
     <div className="navbar" >
     <h2>Role Based Access Control</h2>
     <div className='Buttons'  >
-     <button disabled={disable} id="btn" className={role === 'Admin' ? 'active' : ''}  value="Admin"  onChange={handleRoleChange} onClick={()=>{setRole("Admin"); setDisable(true)}} >
-        <Link className='navLink' to='/users/admin'>Admin</Link>
-      </button>
-
-      <button disabled={disable}  id="btn" className={role === 'Editor' ? 'active' :''} value="Editor"   onChange={handleRoleChange} onClick={()=>{setRole("Editor"); setDisable(true)}}>
-         <Link className='navLink' to='/users/editor'>Editor</Link>
-      </button>
-
-       <button disabled={disable} id="btn" className={role === 'Viewer' ? 'active' :''} value="Viewer"   onChange={handleRoleChange} onClick={()=>{setRole("Viewer"); setDisable(true)}}>
-          <Link className='navLink' to='/viewer'>Viewer</Link>
-      </button>
+    <Link className='navLink' to='/users/admin'>
+     <button disabled={disable} id="btn" className={role === 'Admin' ? 'active' : 'inactive'}  value="Admin"  onChange={handleRoleChange} onClick={()=>{setRole("Admin"); setDisable(true)}} >Admin</button>
+    </Link>
+    <Link className='navLink' to='/users/editor'>
+      <button disabled={disable}  id="btn" className={role === 'Editor' ? 'active' :'inactive'} value="Editor"   onChange={handleRoleChange} onClick={()=>{setRole("Editor"); setDisable(true) }}>Editor </button>
+    </Link>
+    <Link className='navLink' to='/viewer'>
+       <button disabled={disable} id="btn" className={role === 'Viewer' ? 'active' :'inactive'} value="Viewer"   onChange={handleRoleChange} onClick={()=>{setRole("Viewer");setDisable(true) }}>Viewer</button>
+    </Link>
      
     </div>
     </div>
